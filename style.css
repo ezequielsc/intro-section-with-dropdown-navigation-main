@@ -1,0 +1,285 @@
+/* -------------Config adm------------- */
+*{
+    margin: 0;
+    padding: 0 10px;
+}
+a{
+    color: rgb(109, 109, 109);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+/* -------------Config menu retratil------------- */
+.desktopmob, .menu-mob , .menumob{
+    display: none;
+}
+.menu .sub-features{
+    margin-top: 10px;
+    display: none;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgb(158, 158, 158);
+    padding: 10px 0px;
+    position: absolute; 
+    z-index: 1;
+}
+.menu .sub-features li{
+    width: 50px 20px;
+    padding: 0px;
+    margin: 5px 0px;
+}
+.menu .sub-features a{
+    font-size: 11px;
+}
+.menu .sub-features:hover{
+    display: block;
+}
+.menu .sub-company{
+    margin-top: 10px;
+    display: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgb(158, 158, 158);
+    padding: 10px 0px;
+    position: absolute;
+    z-index: 1;
+}
+.menu .sub-company li{
+    width: 50px 20px;
+    padding: 0px;
+    margin: 5px 0px;
+}
+.menu .sub-company a{
+    font-size: 11px;
+}
+.menu .sub-company:hover{
+    display: block;
+}
+
+/* -------------Config heart------------- */
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 30px;
+    position: relative;
+    z-index: 2;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    list-style: none;
+    font-size: 13px;
+    margin: 10px;
+    width: 100px;
+}
+nav img{
+    margin:0 1px;
+}
+nav a{
+    padding: 0 1px ;
+    margin: 0 1px;
+}
+nav a:hover{
+    color: #000000;
+}
+header .login{
+    display: flex;
+    flex-direction: row;
+    margin-left: 280px;
+}
+header .login .buttons{
+    color: #c0c0c0;
+    background-color: #fff;
+    margin:0 10px;
+    border: none;
+    width: 100px;
+}
+header .buttons:hover{
+    border:solid 2px #a0a0a0;
+    border-radius: 10px;
+}
+
+/* -------------Config left------------- */
+main .left{
+    width: 500px;
+    padding-top: 100px;
+}
+main h1{
+    font-size: 80px;
+    line-height: 50px;
+}
+main .parag{
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left .btn-left{
+    padding-top: 50px;
+    color: #fff;
+}
+.left .buttons{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: #000000 solid;
+    color: #fff;
+    background-color: #000000;
+}
+.left .buttons:hover{
+    background-color: #c0c0c0;
+    border: #444444 solid 1px;
+}
+.left .buttons a{
+    color: #fff;
+}
+.left img{
+    padding-top: 50px;
+}
+
+/* -------------Config right------------- */
+main .right img{
+    width: 21.875rem;
+}
+#img-mob{
+    display: none;
+}
+
+ 
+
+
+
+
+
+
+
+
+/* -------------Config mobile------------- */
+@media screen and (max-width: 850px){
+    *{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 1px;
+    }
+    main{
+        flex-direction: column-reverse;
+        padding-top: 0;
+        gap: 10px;
+    }
+    header{
+        justify-content: space-between;
+    }
+    header .menu{
+        display: none;
+    }
+    header .login{
+        display: none;
+    }
+
+/* -------------Config menu-mob------------- */
+    .desktopmob{
+        display: inline-block;
+    }
+    header .desktopmob .menumob{
+        display: none;
+        margin-top: 10px;
+        width: 120px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 0 8px rgb(158, 158, 158);
+        padding: 10px 0px;
+        position: absolute; 
+        z-index: 1;
+        right: 20px;
+    }
+    header .desktopmob .menumob:hover{
+        display: block;
+    }
+    header .desktopmob .menu-mob{
+        display: inline-block;
+    }
+    .menu-mob nav ul  {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-mob .sub-features-mob{
+        display: none;
+    }
+    .menu-mob .sub-company-mob{
+        display: none;
+    }
+    .desktopmob .login-mob button{
+        display: flex;
+        flex-direction: column;
+        color: #c0c0c0;
+        background-color: #fff;
+        margin:0 10px;
+        border: none;
+        width: 100px;
+        padding: 5px 0;
+        margin-top: 5px;
+    }
+    .desktopmob .login-mob button:hover{
+        border:solid 2px #a0a0a0;
+        border-radius: 10px;
+    }
+
+/* -------------Config Left------------- */
+    main .left{
+        padding-top: 10px;
+        width: 370px;
+    }
+    .left h1{
+        font-size: 60px;
+        padding: 0;
+        margin: 0;
+        width: 365px;
+        text-align: center;
+    }
+    .left .title{
+        width: 300px;
+        margin: 0;
+        text-align: center;
+    }
+    .left .parag{
+        width: 100%; 
+        padding-top: 10px;
+        text-align: center;
+    }
+    .left .btn-left{
+        margin-top: 10px;
+        padding-top: 0px;
+        width: 150px;
+        align-items: center;
+    }
+    .left .imgs img{
+        width: 85px;
+        padding: 0;
+        height: auto;
+    }
+    .left .imgs{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+    }
+    
+/* -------------Config Right------------- */
+    #img-desk{
+        display: none;
+    }
+    #img-mob{
+        display: block;
+        padding-top: 0;
+        margin: 0;
+    }
+}
